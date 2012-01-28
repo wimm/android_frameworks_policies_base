@@ -177,6 +177,13 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
             public boolean showBeforeProvisioning() {
                 return false;
             }
+        
+            // wuhua 20100930 modify begin:disable air plane mode item
+            public boolean isEnabled() {
+                return false;
+            }
+            // wuhua 20100930 modify end: disable air plane mode item
+
         };
 
         mItems = Lists.newArrayList(
